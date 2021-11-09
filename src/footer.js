@@ -21,7 +21,7 @@ const address= ['Μαιζώνος 307 και Κυρίλλου Αρχιεπισκ
     'Πάτρα, 26222',
     'magelectronicslab@gmail.com'
 ];
-const phone= ['2610318995, 6976751751'];
+
 
 const handleClick= (event)=>{
     window.open('https://www.facebook.com/Mag-Electronics-Lab-1820753208215442/', '_blank');
@@ -38,11 +38,9 @@ const Footer=()=>{
                         )
                     )
                     }
-                    {phone.map((i)=>(
-                        <Typography key={i} variant="subtitle1" fontFamily="sans-serif"><a href="tel:30"{...i}>{i}</a></Typography>
-                        )
-                    )
-                    }
+                    <Typography key={i} variant="subtitle1" fontFamily="sans-serif"><a href="tel:302610318995">2610318995</a></Typography>
+                    <Typography key={i} variant="subtitle1" fontFamily="sans-serif"><a href="tel:306976751751">6976751751</a></Typography>
+
                     <FacebookIcon onClick={handleClick} className={iconClass.facebookIcon} />
                 </Box>
             </Grid>
