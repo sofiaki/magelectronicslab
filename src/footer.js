@@ -19,10 +19,9 @@ const useStyles= makeStyles(theme=>({
 )
 const address= ['Μαιζώνος 307 και Κυρίλλου Αρχιεπισκόπου',
     'Πάτρα, 26222',
-    '<a href="tel:302610318995">2610318995</a>, 6976751751',
     'magelectronicslab@gmail.com'
 ];
-
+const phone= ['2610318995, 6976751751'];
 
 const handleClick= (event)=>{
     window.open('https://www.facebook.com/Mag-Electronics-Lab-1820753208215442/', '_blank');
@@ -36,6 +35,11 @@ const Footer=()=>{
                 <Box sx={{m:'2px', textAlign: 'center'}}>
                     {address.map((i)=>(
                         <Typography key={i} variant="subtitle1" fontFamily="sans-serif">{i}</Typography>
+                        )
+                    )
+                    }
+                    {phone.map((i)=>(
+                        <Typography key={i} variant="subtitle1" fontFamily="sans-serif"><a href="tel:30{i}">{i}</a></Typography>
                         )
                     )
                     }
