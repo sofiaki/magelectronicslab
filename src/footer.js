@@ -19,7 +19,7 @@ const useStyles= makeStyles(theme=>({
 )
 const address= ['Μαιζώνος 307 και Κυρίλλου Αρχιεπισκόπου',
     'Πάτρα, 26222',
-    '2610318995, 6976751751',
+    '<a href="tel:302610318995">2610318995</a>, 6976751751',
     'magelectronicslab@gmail.com'
 ];
 
