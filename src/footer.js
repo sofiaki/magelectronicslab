@@ -39,7 +39,7 @@ const Footer=()=>{
                     )
                     }
                     {phone.map((i)=>(
-                        <Typography key={i} variant="subtitle1" fontFamily="sans-serif"><a href="tel:30{i}">{i}</a></Typography>
+                        <Typography key={i} variant="subtitle1" fontFamily="sans-serif"><a href="tel:30"{...i}>{i}</a></Typography>
                         )
                     )
                     }
