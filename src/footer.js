@@ -38,8 +38,8 @@ const Footer=()=>{
                         )
                     )
                     }
-                    <Typography key={i} variant="subtitle1" fontFamily="sans-serif"><a href="tel:302610318995">2610318995</a></Typography>
-                    <Typography key={i} variant="subtitle1" fontFamily="sans-serif"><a href="tel:306976751751">6976751751</a></Typography>
+                    <Typography variant="subtitle1" fontFamily="sans-serif"><a href="tel:+302610318995">2610318995</a></Typography>
+                    <Typography  variant="subtitle1" fontFamily="sans-serif"><a href="tel:+306976751751">6976751751</a></Typography>
 
                     <FacebookIcon onClick={handleClick} className={iconClass.facebookIcon} />
                 </Box>
