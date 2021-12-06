@@ -16,7 +16,6 @@
     "react-dom": "^17.0.2",
     "react-google-maps": "^9.4.5",
     "react-scripts": "4.0.3",
-    "react-snap": "^1.23.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -46,7 +45,8 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "react-snap": "^1.23.0"},
   "author": "",
   "license": "ISC"
 }
