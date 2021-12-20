@@ -21,7 +21,7 @@ const Header =()=>{
     };
     return(
     <Grid container id="header" item>
-        <Grid xs={12} md={6}  align="center">
+        <Grid item xs={12} md={6}  align="center">
             <Avatar alt="Mag Electronics Lab" src={logo} sx={{width: 80, height: 80 }}/>
             <Typography variant="h3" >Mag Electronics Lab</Typography>
             <Typography variant="h5">Άγγελος Μαγούλης</Typography>
@@ -29,38 +29,38 @@ const Header =()=>{
         <Grid id="menu" item xs={12} md={6} lg={6} m="auto">
             <Box sx={{m:'2px'}} display={{xs:'none', md:'block'}}>
                 {menu.map((i)=>(
-                    <Button id="hBtn" href={i.id}>{i.value}</Button>))
+                    <a class="hBtn" href={i.key}>{i.value}</a>))
                 }
             </Box>
             <Box display={{xs:'block', md:'none'}}>
-            <Button
-        id="demo-positioned-button"
-        aria-controls="demo-positioned-menu"
-        aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
-        onClick={handleClick}
-      >
-        <MenuIcon sx={{color:"black"}} />
-      </Button>
-      <Menu
-        id="demo-positioned-menu"
-        aria-labelledby="demo-positioned-button"
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        anchorOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
-        }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
-        }}
-      >
-          {menu.map((i)=>(
-            <MenuItem onClick={handleClose}><a href={i.id}>{i.value}</a></MenuItem>))
-        }
-      </Menu>
+              <Button
+                id="demo-positioned-button"
+                aria-controls="demo-positioned-menu"
+                aria-haspopup="true"
+                aria-expanded={open ? 'true' : undefined}
+                onClick={handleClick}
+              >
+                <MenuIcon sx={{color:"black"}} />
+              </Button>
+              <Menu
+                id="drop-down-menu"
+                aria-labelledby="demo-positioned-button"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'left',
+                }}
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+              >
+                  {menu.map((i)=>(
+                    <MenuItem onClick={handleClose}><a href={i.key}>{i.value}</a></MenuItem>))
+                }
+              </Menu>
             </Box>
         </Grid>
         
@@ -71,12 +71,12 @@ const Header =()=>{
 export default Header;
 const menu= [
     {
-        id: "#header", value: "Αρχική"
+        key: "#header", value: "Αρχική"
     } , 
     {
-        id: "#main", value:"Υπηρεσίες"
+        key: "#main", value:"Υπηρεσίες"
     } ,
     {
-         id: "#footer", value: "Επικοινωνία"
+         key: "#footer", value: "Επικοινωνία"
     }
     ]
