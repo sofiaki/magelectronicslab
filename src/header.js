@@ -22,12 +22,12 @@ const Header =()=>{
     };
     return(
     <Grid container id="header" item>
-        <Grid xs={6} md={6}  align="center">
+        <Grid xs={12} md={6}  align="center">
             <Avatar alt="Mag Electronics Lab" src={logo} sx={{width: 80, height: 80 }}/>
             <Typography variant="h3" >Mag Electronics Lab</Typography>
             <Typography variant="h5">Άγγελος Μαγούλης</Typography>
         </Grid>
-        <Grid id="menu" item xs={6} md={6} lg={6} m="auto">
+        <Grid id="menu" item xs={12} md={6} lg={6} m="auto">
             <Box sx={{m:'2px'}} display={{xs:'none', md:'block'}}>
                 {menu.map((i)=>(
                     <Button id="hBtn" href={i.id}>{i.value}</Button>))
