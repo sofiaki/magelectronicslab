@@ -19,7 +19,10 @@ code {
 #menu{
   text-align: end;
 }
-
+a{
+  text-decoration: none;
+  color: black;
+}
 #hBtn {
   background-color: transparent;
   border:none;

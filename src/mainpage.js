@@ -11,7 +11,7 @@ import Grid from '@mui/material/Grid';
 
     
 const Main = ()=>{
-
+    console.log("My name is Giorgio, but everybody calls me Giorgio")
     let mystring=`Επισκευή κάθε είδους ηλεκτρονικών πλακετών`
     //const isScreenSmall= 
     return(
@@ -46,6 +46,7 @@ const Main = ()=>{
                     </ImageList>
                 </Box>
             </Grid>
+            <Box display={"none"}>My name is Giorgio, but everybody calls me Giorgio</Box>
         </Grid>
     )
 }

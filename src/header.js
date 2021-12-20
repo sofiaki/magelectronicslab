@@ -7,7 +7,6 @@ import logo from './mel2.png';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import { Icon } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const Header =()=>{
@@ -59,7 +58,7 @@ const Header =()=>{
         }}
       >
           {menu.map((i)=>(
-            <MenuItem href={i.id} onClick={handleClose}>{i.value}</MenuItem>))
+            <MenuItem onClick={handleClose}><a href={i.id}>{i.value}</a></MenuItem>))
         }
       </Menu>
             </Box>
