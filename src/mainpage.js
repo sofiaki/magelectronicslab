@@ -15,10 +15,10 @@ const Main = ()=>{
     let mystring=`Επισκευή κάθε είδους ηλεκτρονικών πλακετών`
     //const isScreenSmall= 
     return(
-        <Grid container direction='column'>
+        <Grid container direction='column' id="main">
             <Grid item xs={1} sx={{m:2}}>
                 <Box textAlign="center">
-                    <Typography variant='h4' sx={{fontFamily: 'Monospace', m:3}}>{mystring}</Typography>
+                    <Typography variant='h4' sx={{fontFamily: 'Arial', m:3}}>{mystring}</Typography>
                     <Typography variant='body1' sx={{m:1}}>Επισκευάζουμε και προγραμματίζουμε πλακέτες οχημάτων, επαγγελματικών μηχανημάτων, οικιακών συσκευών, Η/Υ και περιφεριακών.</Typography>
                 </Box>
             </Grid>
@@ -37,7 +37,7 @@ const Main = ()=>{
                                 
                                     <ImageListItemBar 
                                         title={i.title}
-                                        sx={{textAlign:'center', bgcolor: 'rgb(147, 209, 0, 0.8)','& .MuiImageListItemBar-title':{whiteSpace: 'normal'} }}
+                                        sx={{textAlign:'center', bgcolor: 'rgb(107, 182, 22, 0.8)','& .MuiImageListItemBar-title':{whiteSpace: 'normal'} }}
                                         
                                     />
                                 </ImageListItem>

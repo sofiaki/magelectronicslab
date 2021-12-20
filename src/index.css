@@ -11,4 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#header{
+  background-color: rgb(107, 182, 22);
+  min-height: '25vh';
+  padding: 20px;
+}
+#menu{
+  text-align: end;
+}
 
+#hBtn {
+  background-color: transparent;
+  border:none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  text-transform: none;
+  color:rgb(221, 250, 189);
+  margin: 15px;
+  padding: 15px;
+}
+#hBtn:hover{
+  font-size: 130%;
+}
+#main{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#footer{
+  background-color: rgb(214, 250, 174);
+}
