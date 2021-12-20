@@ -29,7 +29,7 @@ const Header =()=>{
         <Grid id="menu" item xs={12} md={6} lg={6} m="auto">
             <Box sx={{m:'2px'}} display={{xs:'none', md:'block'}}>
                 {menu.map((i)=>(
-                    <a class="hBtn" href={i.key}>{i.value}</a>))
+                    <a className="hBtn" key={i.key} href={i.key}>{i.value}</a>))
                 }
             </Box>
             <Box display={{xs:'block', md:'none'}}>
@@ -58,7 +58,7 @@ const Header =()=>{
                 }}
               >
                   {menu.map((i)=>(
-                    <MenuItem onClick={handleClose}><a href={i.key}>{i.value}</a></MenuItem>))
+                    <MenuItem key={i.key} onClick={handleClose}><a href={i.key}>{i.value}</a></MenuItem>))
                 }
               </Menu>
             </Box>
