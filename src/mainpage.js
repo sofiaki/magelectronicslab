@@ -46,7 +46,7 @@ const Main = ()=>{
                     </ImageList>
                 </Box>
             </Grid>
-            <Box display={"none"}>My name is Giorgio, but everybody calls me Giorgio</Box>
+            <Box display={"none"}>My name is Giovanni Giorgio, but everybody calls me Giorgio</Box>
         </Grid>
     )
 }
