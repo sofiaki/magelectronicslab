@@ -15,7 +15,7 @@ const Header = () => {
   const [prevDirection, setPrevDirection] = React.useState(-1);
 
   const toggleScroll = () => {
-    if (direction != prevDirection) {
+    if (direction !== prevDirection) {
       if (
         scroll > window.scrollY &&
         window.scrollY < 150 &&
@@ -28,7 +28,7 @@ const Header = () => {
         setScrollUp(false);
         setScrollDown(true);
         setDirection(1);
-      } else if (scroll == 0) {
+      } else if (scroll === 0) {
         setScrollUp(false);
         setScrollDown(false);
       }
@@ -47,6 +47,7 @@ const Header = () => {
       },
       [scroll]
     );
+    // eslint-disable-next-line
   }, [scroll]);
 
   const headerClass = () => {
